@@ -1,0 +1,54 @@
+def Kasif():
+    balance=100000
+    print("your balance is",balance)
+    w=input("press w for withdrawal \n press d for deposit")
+    if w=="w":
+        a=int(input("enter the amount"))
+        balance=balance-a
+        print("your balance is",balance)
+    elif w=="d":
+        a = int(input("enter the amount"))
+        balance=balance+a
+        print("your balance is", balance)
+
+
+def Sujau():
+    balance = 50000
+    print("your balance is", balance)
+    w = input("press w for withdrawal \n press d for deposit")
+    if w == "w":
+        a = int(input("enter the amount"))
+        balance = balance - a
+        print("your balance is", balance)
+    elif w == "d":
+        a = int(input("enter the amount"))
+        balance = balance + a
+        print("your balance is", balance)
+
+
+def Wardha():
+    balance = 25000
+    print("your balance is", balance)
+    w = input("press w for withdrawal \n press d for deposit")
+    if w == "w":
+        a = int(input("enter the amount"))
+        balance = balance - a
+        print("your balance is", balance)
+    elif w == "d":
+        a = int(input("enter the amount"))
+        balance = balance + a
+        print("your balance is", balance)
+names={"kasif123":1234,"sujau123":5678,"wardha":9101}
+username=input("enter your username")
+if username in names.keys():
+    pas=int(input("enter the password"))
+    if pas==1234:
+        Kasif()
+    elif pas==5678:
+        Sujau()
+    elif pas==9101:
+        Wardha()
+    else:
+        print("wrong password")
+else:
+    print("wrong username")
